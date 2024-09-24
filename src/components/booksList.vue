@@ -1,6 +1,6 @@
 <script setup>
 import books from '@/assets/books.json'
-//console.log(books)
+//console.log(books)  
 const bookList = books;
 console.log(bookList[1].book)
 </script>
