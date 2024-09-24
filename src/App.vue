@@ -1,12 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 //import HelloWorld from './components/HelloWorld.vue'
-import booksList from '@/components/booksList.vue'
+import bookLists from '@/components/bookLists.vue'
 </script>
 
 <template>
 
-<booksList />
+<bookLists />
 </template>
 
 <style scoped>
