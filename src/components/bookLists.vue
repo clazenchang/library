@@ -1,4 +1,6 @@
 <script setup>
+import { computed } from 'vue'
+import { ref } from 'vue'
 import books from '@/assets/books.json'
 import bookList from '@/components/bookList.vue'
 
@@ -7,7 +9,7 @@ for (let book of books) {   // for...of loop iterate the object
   authorArr.push(book.author)
 }
 
-authorArr = authorArr.reduce((accu, curr) => {
+authorArr = authorArr.reduce((accu, curr) => {  // remove the duplicate author name
   if (accu.includes(curr)) {
     return accu
   } else {
@@ -16,11 +18,11 @@ authorArr = authorArr.reduce((accu, curr) => {
   }
 }, [])
 
+const checkedAuthors = ref([])
 
-
-// function filteredAuthors(){
-//   var authors = 0
-// }
+const filteredAuthor = computed(() => {
+  return checkedAuthors.value;
+})
 
 </script>
 
@@ -30,23 +32,23 @@ authorArr = authorArr.reduce((accu, curr) => {
 
     <div class="d-none d-md-flex col-md-2 mt-4">
       <div class="d-flex flex-column mb-3">
-        <!-- <div class="p-2" v-for="aBook in books" :key="aBook.id">{{ aBook.author }}</div> -->
-        <div class="p-2" v-for="author in authorArr">{{ author }}</div>
+        <!-- {{ filteredAuthor }} -->
+        <div class="p-2" v-for="author in authorArr" :key="author">
+          <input type="checkbox" class="me-2" v-model="checkedAuthors" :value="author">{{ author }}
+        </div>
 
         <!-- <div class="p-2">Flex item 2</div>
         <div class="p-2">Flex item 3</div> -->
       </div>
     </div>
 
+    <!-- books -->
     <div class="col-10">
       <div class="container mt-4">
         <div class="row justify-content-around">
-
           <bookList v-for="aBook in books" :key="aBook.id" :book="aBook" />
-
         </div>
       </div>
     </div>
-
   </div>
 </template>

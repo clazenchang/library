@@ -1,4 +1,6 @@
 <script setup>
+
+
 // import books from '@/assets/books.json'
 
 // const bookList = books;
@@ -21,8 +23,8 @@ const props = defineProps({
         <img :src="book.picURL" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">{{ book.book }}</h5>
+        <div class="card-body position-relative">
+          <a href="/book" class="card-title">{{ book.book }}</a>
           <p class="mb-0">作者:{{ book.author }}</p>
           <p class="mb-0">出版年:{{ book.year }}</p>
           <p class="mb-1">語言別:{{ book.language }}</p>
@@ -31,7 +33,6 @@ const props = defineProps({
       </div>
     </div>
   </div>
-
   <!-- <img :src="bookList[1].picURL"> -->
 </template>
 
