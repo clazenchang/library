@@ -1,11 +1,15 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { ref } from 'vue'
-import books from '@/assets/books.json'
+import books from '@/assets/books_bk.json'
 import bookList from '@/components/bookList.vue'
 
+
+
 var authorArr = [];
-for (let book of books) {   // for...of loop iterate the object
+
+
+for (let book of books) {   // for...of loop iterate the Array
   authorArr.push(book.author)
 }
 

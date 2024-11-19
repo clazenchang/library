@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "book": "什麼是好？什麼是壞？",
+    "author": "謝蕙心",
+    "year": 2002,
+    "picURL": "https://www.books.com.tw/img/001/028/28/0010282848.jpg",
+    "language": "Chinese"
+  },
+  {
+    "id": 1,
+    "book": "哲學種子系列V5.神從哪裡來？",
+    "author": "謝蕙心",
+    "year": 2002,
+    "picURL": "https://www.books.com.tw/img/001/025/82/0010258296.jpg",
+    "language": "Chinese"
+  },
+  {
+    "id": 2,
+    "book": "智慧小學堂",
+    "author": "謝蕙心",
+    "year": 2010,
+    "picURL": "https://www.books.com.tw/img/001/047/03/0010470302.jpg",
+    "language": "Chinese"
+  },
+  {
+    "id": 3,
+    "book": "Child of galaxies",
+    "author": "Nuto",
+    "year": 2020,
+    "picURL": "https://www.books.com.tw/img/F01/628/97/F016289730.jpg",
+    "language": "English"
+  },
+  {
+    "id": 4,
+    "book": "Happiness Is . . . 500 Ways to Be In the Moment",
+    "author": "Lisa Swerling",
+    "year": 2016,
+    "picURL": "https://a.ecimg.tw/items/DJAF2LA900A95WH/000001_1568616852.jpg",
+    "language": "English"
+  },
+  {
+    "id": 5,
+    "book": "Philosophy.",
+    "author": "Dorling Kindersley Limited",
+    "year": 2021,
+    "picURL": "https://cdnec.sanmin.com.tw/product_images/024/024144669.jpg",
+    "language": "English"
+  },
+  {
+    "id": 6,
+    "book": "小與大",
+    "author": "吳淨騁",
+    "year": 2005,
+    "picURL": "https://www.books.com.tw/img/001/025/82/0010258298.jpg",
+    "language": "Chinese"
+  },
+  {
+    "id": 7,
+    "book": "哲學種子系列V7.小與大",
+    "author": "吳淨騁",
+    "year": 2005,
+    "picURL": "https://www.books.com.tw/img/001/025/82/0010258298.jpg",
+    "language": "Chinese"
+  },
+  {
+    "id": 8,
+    "book": "你以為你以為的就是你以為的嗎? : 12道檢測思考清晰度的哲學闖關遊戲",
+    "author": "陳信宏",
+    "year": 2007,
+    "picURL": "https://www.books.com.tw/img/001/036/50/0010365044.jpg",
+    "language": "Chinese"
+  },
+  {
+    "id": 9,
+    "book": "新聞挖挖挖 : 頭條新聞背後的哲學思索",
+    "author": "陳信宏",
+    "year": 2007,
+    "picURL": "https://www.books.com.tw/img/001/035/11/0010351160.jpg",
+    "language": "Chinese"
+  }
+]

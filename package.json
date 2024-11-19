@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch src/assets/books.json --port 8001"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "json-server": "^1.0.0-beta.3",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
