@@ -6,14 +6,16 @@ var AuthorArr = ref([])
 
 onMounted(async () => {
   try {
-    await fetch('http://localhost:8001/books')
+    // await fetch('http://localhost:8001/books') 
+    await fetch('https://raw.githubusercontent.com/clazenchang/library/refs/heads/main/src/assets/books_bk.json')
       .then(res => res.json())
       .then(res => {
-        console.log(res);
+        // console.log(res);
         books.value = res;
-        for (let book of res) {
+        for (let book of books.value) {   // all authors of books
           AuthorArr.value.push(book.author)
         }
+
         // remove the duplicate author name
         AuthorArr.value = AuthorArr.value.reduce((accu, curr) => {
           if (accu.includes(curr)) {
@@ -23,7 +25,7 @@ onMounted(async () => {
             return accu
           }
         }, [])
-        console.log(AuthorArr.value)
+        // console.log(AuthorArr.value)
       })
 
   } catch (error) {
@@ -35,5 +37,6 @@ onMounted(async () => {
 </script>
 
 <template>
-  try
+  try <br/>
+  <!-- {{ AuthorArr }} -->
 </template>
