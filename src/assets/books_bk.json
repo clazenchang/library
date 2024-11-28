@@ -5,7 +5,8 @@
     "author": "謝蕙心",
     "year": 2002,
     "picURL": "https://www.books.com.tw/img/001/028/28/0010282848.jpg",
-    "language": "Chinese"
+    "language": "Chinese",
+    "describe": "我們常常會說：這是「好事」...這是「壞事」...那麼，什麼是「好」？什麼是「壞」呢？如果能當一天的隱形人，你會選擇幫助別人？還是會去做一些平時不敢做的壞事？如果好與壞的判斷不是由我們自己思考得來，而是由別人決定，那世界會變成什麼樣子？如果所有的「好」與「壞」都清楚的規定在一本「好與壞的辭典」中，那麼，我們是不是只要照著規定，完全不需要負任何責任？有沒有一種方法可以讓我們只做好事而不做壞事？"
   },
   {
     "id": 1,
@@ -13,7 +14,8 @@
     "author": "謝蕙心",
     "year": 2002,
     "picURL": "https://www.books.com.tw/img/001/025/82/0010258296.jpg",
-    "language": "Chinese"
+    "language": "Chinese",
+    "describe": "自古以來，人類總是不斷的尋找生命是從何而來，世界是如何誕生? 本書提供一個給孩子們接觸哲學和信仰的機會，並且讓所有的孩子「自己」去思考、判斷，拋出一個既有的想法，表達出「自我看法」。"
   },
   {
     "id": 2,
@@ -21,7 +23,8 @@
     "author": "謝蕙心",
     "year": 2010,
     "picURL": "https://www.books.com.tw/img/001/047/03/0010470302.jpg",
-    "language": "Chinese"
+    "language": "Chinese",
+    "describe": "我出生之前在哪裡？我們為什麼要活著？ 小孩永遠都要聽大人的話嗎？ 為什麼我一定要上學？什麼才算是真正的朋友？　　法國LAROUSSE百科系列之《智慧小學堂》，收錄280個你不可不思考的哲學問題，讓你愛上你的好奇心，培養獨立思考的技能和生活智慧！"
   },
   {
     "id": 3,
@@ -29,7 +32,8 @@
     "author": "Nuto",
     "year": 2020,
     "picURL": "https://www.books.com.tw/img/F01/628/97/F016289730.jpg",
-    "language": "English"
+    "language": "English",
+    "describe": "Blake Nuto is an elementary teacher with a deep love of children’s literature and a desire to integrate philosophy and mindfulness into education. Child of Galaxies is a thought-provoking and poignant picture book, celebrating the wonder, mystery and joy of what it means to be alive."
   },
   {
     "id": 4,
@@ -37,7 +41,8 @@
     "author": "Lisa Swerling",
     "year": 2016,
     "picURL": "https://a.ecimg.tw/items/DJAF2LA900A95WH/000001_1568616852.jpg",
-    "language": "English"
+    "language": "English",
+    "describe": "Mindful living is happy living. This refreshing book from the creators of Happiness Is . . . illustrates 500 inspiring ways to slow down, unplug, de-stress, connect with others, and relish the simple moments in life."
   },
   {
     "id": 5,
@@ -45,7 +50,8 @@
     "author": "Dorling Kindersley Limited",
     "year": 2021,
     "picURL": "https://cdnec.sanmin.com.tw/product_images/024/024144669.jpg",
-    "language": "English"
+    "language": "English",
+    "describe": "From first words to the Big Bang, from the wonders of nature to city adventures, you will find expert knowledge, hours of fun and endless inspiration in the pages of our books."
   },
   {
     "id": 6,
@@ -53,15 +59,17 @@
     "author": "吳淨騁",
     "year": 2005,
     "picURL": "https://www.books.com.tw/img/001/025/82/0010258298.jpg",
-    "language": "Chinese"
+    "language": "Chinese",
+    "describe": "小朋友常說：「我長大以後…」然而，什麼是長大？為什麼有些事大人可以做，小孩卻不能做？小孩為什麼不能投票？大人在小孩的成長過程中，該如何陪伴小孩長大？這些小與大的問題，以生活中的例子和孩子談論什麼是「長大」以及身為小朋友應有的「權利」，引導小朋友在閱讀過程進行思考與判斷。"
   },
   {
     "id": 7,
-    "book": "哲學種子系列V7.小與大",
+    "book": "快樂的秘密",
     "author": "吳淨騁",
-    "year": 2005,
-    "picURL": "https://www.books.com.tw/img/001/025/82/0010258298.jpg",
-    "language": "Chinese"
+    "year": 2004,
+    "picURL": "https://www.books.com.tw/img/001/026/46/0010264635.jpg",
+    "language": "Chinese",
+    "describe": "　每個人都想要快樂幸福，你是否已經找到自己的快樂？但是，有誰知道快樂幸福是什麼？生命中有好有壞，為什麼不快樂總是比快樂容易被察覺？快樂與不快樂，哪一個比較容易？ 這些自古以來困擾人類的問題，在【快樂的秘密】中以幽默生動的故事與對話呈現，讓我們一起來找到快樂！"
   },
   {
     "id": 8,
@@ -69,7 +77,8 @@
     "author": "陳信宏",
     "year": 2007,
     "picURL": "https://www.books.com.tw/img/001/036/50/0010365044.jpg",
-    "language": "Chinese"
+    "language": "Chinese",
+    "describe": "這些遊戲的目的是提供一條有趣的途徑，讓你了解自己究竟是用什麼樣的方式思考哪些事情，從而揭露一些出乎你意料之外的事實。玩過這些遊戲之後，你很可能會發現，自己過去以為自己擁有的想法，原來完全不是那麼一回事。這樣的結果也許讓人有點訝異、有點迷惑，但是也充滿了樂趣。"
   },
   {
     "id": 9,
@@ -77,6 +86,7 @@
     "author": "陳信宏",
     "year": 2007,
     "picURL": "https://www.books.com.tw/img/001/035/11/0010351160.jpg",
-    "language": "Chinese"
+    "language": "Chinese",
+    "describe": "新聞事件可以視為茶餘飯後的趣聞，也可以做為哲學思索的素材。在本書中，英國哲普作家巴吉尼將以新聞事件為範例，利用哲學大師的技巧與見解，帶你一步步挖掘新聞事件背後的議題。 吃飽太撐嗎？新聞報導看看就好了，幹嘛還要挖？作者向你保證，用哲學方式思考新聞報導，將能訓練百毒不侵的思考能力"
   }
 ]
