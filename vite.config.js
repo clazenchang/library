@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: '/library/',   // just for gh-pages
+  base: '/library/',   // just for gh-pages
   plugins: [
     vue(),
   ],
