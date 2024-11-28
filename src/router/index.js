@@ -11,10 +11,13 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/book',
+      path: '/:id',
       name: 'book',
       component: book
     },
+    // haven't do not found page yet
+
+
 
     // {
     //   path: '/about',

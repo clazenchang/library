@@ -7,7 +7,7 @@ import Try from '@/components/try.vue'
 
 <!-- <bookLists /> -->
  <RouterView />
- <Try />
+ <!-- <Try /> -->
 </template>
 
 <style scoped>

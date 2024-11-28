@@ -58,7 +58,6 @@ function clearSelectLanguages() {
 
 function sortModeSwitch(mode) {
   sortMode.value = mode
-  // console.log(sortMode)
 }
 
 
@@ -97,40 +96,33 @@ function filtering() {
     filteredBooks.value = filterByLanguage
   }
 
-  originOrder = [...JSON.parse(JSON.stringify(filteredBooks.value))]   // haven't sorted
-  sorting(sortMode.value, originOrder)
+  originOrder = [...JSON.parse(JSON.stringify(filteredBooks.value))]  // haven't sorted(wouldn't watchEffect())
+  sorting(sortMode.value, originOrder)  // pass originOrder to sort
 
 }
 
 watchEffect(() => {
-  sorting(sortMode.value, originOrder);
-  console.log("I am watchEffect")
+  sorting(sortMode.value, originOrder);   // default and "if changing", this will exec
 })
 
 // sort
 function sorting(sortMode, origin) {
-  // let originSort = JSON.parse(JSON.stringify(filteredBooks.value))
   // console.log(origin, "foooooo")
 
   switch (sortMode) {
     case "origin":
-      console.log("origin")
       filteredBooks.value = [...origin];    // prevent change origin
-      console.log(origin)
       break;
 
     case "asc":
-      console.log("asc")
       filteredBooks.value.sort((a, b) => a.year - b.year)
       break;
 
     case "des":
-      console.log("des")
       filteredBooks.value.sort((a, b) => b.year - a.year)
       break;
 
     default:
-      console.log("error")
       break;
   }
 }
