@@ -34,7 +34,7 @@ languageArr = languageArr.reduce((accu, curr) => {   // make list of language
 const checkedAuthors = ref([]), checkedLanguages = ref([])
 var filteredBooks, originOrder
 filteredBooks = ref(JSON.parse(JSON.stringify(books)))  // init book list
-originOrder = [...JSON.parse(JSON.stringify(filteredBooks.value))]   // init book order(haven't filted and sorted)
+originOrder = JSON.parse(JSON.stringify(filteredBooks.value))   // init book order(haven't filted and sorted)
 
 
 var sortMode = ref("origin")   // default sort mode
@@ -91,14 +91,13 @@ function filtering() {
   // then, collected books by languages
   if (checkedLanguages.value.length > 0) {
     var filterByLanguage = []
-    filterByLanguage = filteredBooks.value     // inherit value from filterByAuthor
+    filterByLanguage = JSON.parse(JSON.stringify(filteredBooks.value))     // inherit value from filterByAuthor
     filterByLanguage = filterByLanguage.filter((book) => checkedLanguages.value.includes(book.language))
     filteredBooks.value = filterByLanguage
   }
 
   originOrder = [...JSON.parse(JSON.stringify(filteredBooks.value))]  // haven't sorted(wouldn't watchEffect())
   sorting(sortMode.value, originOrder)  // pass originOrder to sort
-
 }
 
 watchEffect(() => {
@@ -126,8 +125,6 @@ function sorting(sortMode, origin) {
       break;
   }
 }
-
-
 </script>
 
 
@@ -139,7 +136,6 @@ function sorting(sortMode, origin) {
         <div class="container">
           <div class="row">
             <div class="d-flex flex-column">
-              <!-- {{ checkedAuthors }} -->
               <h5><span class="badge text-bg-secondary px-5">依作者</span></h5>
               <div class="p-2" v-for="author in authorArr" :key="author">
                 <input type="checkbox" class="me-2" v-model="checkedAuthors" :value="author">{{ author }}
@@ -149,8 +145,6 @@ function sorting(sortMode, origin) {
                 <button class="col-5 ms-2 mb-1 btn btn-success" @click="clearSelectAuthor">清空</button>
                 <hr class="mt-3">
               </div>
-              <!-- <div class="p-2">Flex item 2</div>
-          <div class="p-2">Flex item 3</div> -->
             </div>
           </div>
 
@@ -178,21 +172,23 @@ function sorting(sortMode, origin) {
 
       <div class="col-10">
         <div class="my-3">
+
           <!-- <sortBar /> -->
-          <div>
-            <span style="position:relative; left:75%">This is sortBar</span>
-          </div>
-          <div style="position:absolute;height:100px ; width:150px; background-color: black; z-index:1;
-    border-radius: 15px; color:white; padding: 5px;">
-            <ul>
-              <li><a href="#" :class="`${sortMode == 'origin' ? 'red' : ''}`" @click="sortModeSwitch('origin')">依選擇(預設)</a>
-              </li>
-              <li><a href="#" :class="`${sortMode == 'asc' ? 'red' : ''}`" @click="sortModeSwitch('asc')">出版年:升冪</a>
-              </li>
-              <li><a href="#" :class="`${sortMode == 'des' ? 'red' : ''}`" @click="sortModeSwitch('des')">出版年:降冪</a>
-              </li>
+          <div class="btn-group d-grid col-2" style="position:relative; left:75%">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              排序方式
+            </button>
+            <ul class="dropdown-menu">
+              <li><a :class="`dropdown-item ${sortMode == 'origin' ? 'active' : ''}`"
+                  @click.prevent="sortModeSwitch('origin')" href="#">作者選擇順序 (預設)</a></li>
+              <li><a :class="['dropdown-item', sortMode == 'asc' ? 'active' : '']"
+                  @click.prevent="sortModeSwitch('asc')" href="#">出版年: 升冪</a></li>
+              <li><a :class="['dropdown-item', sortMode == 'des' ? 'active' : '']"
+                  @click.prevent="sortModeSwitch('des')" href="#">出版年: 降冪</a></li>
             </ul>
           </div>
+
         </div>
 
         <div class="container mt-4">
@@ -214,9 +210,5 @@ function sorting(sortMode, origin) {
 
 li {
   list-style-type: none;
-}
-
-.red {
-  color: red;
 }
 </style>
