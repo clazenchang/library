@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/homeView.vue'
 import book from '@/components/book.vue'
+import booklist from '@/assets/books_bk.json'
+import NotFoundPage from '@/components/notFoundPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,13 +13,25 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/:id',
+      path: '/book/:id',
       name: 'book',
-      component: book
+      component: book,
+      beforeEnter: (to, from, next ) => {
+        const bookId = to.params.id;
+        const bookIds = booklist.map((item) => item.id)
+        const bookExists = bookIds.includes(Number(bookId))
+        if(!bookExists){
+          next({name:'not-found'})
+        }else{
+          next()
+        }
+      }
     },
-    // haven't do not found page yet
-
-
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: NotFoundPage
+    }
 
     // {
     //   path: '/about',
