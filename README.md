@@ -34,6 +34,7 @@
 - Integrate with an API
 - Bootstrap CSS
 - RWD
+- gh-pages (for deploy)
 
 <br/>
 
